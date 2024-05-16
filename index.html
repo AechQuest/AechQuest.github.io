@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charlie Carter dot C C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        @font-face {
+            font-family: 'Linear Beam';
+            src: url('fonts/Linebeam.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'LED';
+            src: url('fonts/LEDMatrix.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Reciept';
+            src: url('fonts/Fake Receipt.otf') format('opentype');
+        }
+        header {
+            font-family: 'LED', Arial, sans-serif;
+            font-size: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            z-index: 4;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #ccc;
+        }
+        nav a:hover {
+            background-color: #999;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            backdrop-filter: blur(10px); /* Apply blur effect */
+        }
+        .project {
+            background-color: #ffffff80;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2; /* Ensure project boxes are above blurred content */
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .project h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .project p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* Add animation for moving images */
+        .moving-images img {
+            position: absolute;
+            animation: moveImage 10s linear infinite;
+        }
+
+        @keyframes moveImage {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            100% {
+                transform: translate(calc(-50% + ${Math.random() * window.innerWidth}px), calc(-50% + ${Math.random() * window.innerHeight}px)) rotate(${Math.random() * 360}deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Charlie's Projects</h1>
+</header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+<div class="moving-images">
+    <img src="https://www.freeiconspng.com/uploads/green-circle-png-15.png" height= 100px alt="Moving Image 1">
+    <img src="https://www.onlygfx.com/wp-content/uploads/2022/03/blue-circle-round-3d-button-3.png" height= 100px alt="Moving Image 2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Red-Circle-Transparent.png" height= 100px alt="Moving Image 3">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 4">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 5">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 6">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 7">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 8">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 9">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 10">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 11">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 12">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 13">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 14">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 15">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 16">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 17">
+    <img src="https://via.placeholder.com/100x100" height= 100px alt="Moving Image 18">
+
+</div>
+<div class="container">
+
+    <div class="project">
+        <img src="https://via.placeholder.com/800x400" alt="Project Image">
+        <h2>Project Title</h2>
+        <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="button">Learn More</button>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/800x400" alt="Project Image">
+        <h2>Project Title</h2>
+        <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="button">Learn More</button>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/800x400" alt="Project Image">
+        <h2>Project Title</h2>
+        <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="button">Learn More</button>
+    </div>
+</div>
+
+<script>
+    const images = document.querySelectorAll('.moving-images img');
+
+    images.forEach(image => {
+        const randomX = Math.random() * window.innerWidth;
+        const randomY = (Math.random() * window.innerHeight) + 150;
+        const randomRotation = Math.random() * 360;
+
+        image.style.top = `${randomY}px`;
+        image.style.left = `${randomX}px`;
+        image.style.transform = `rotate(${randomRotation}deg)`;
+    });
+</script>
+
+</body>
+</html>
